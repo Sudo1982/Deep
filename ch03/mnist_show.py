@@ -21,3 +21,5 @@ img = img.reshape(28, 28)  # 形状を元の画像サイズに変形
 print(img.shape)  # (28, 28)
 
 img_show(img)
+
+print("sudo")
