@@ -1,8 +1,9 @@
 # coding: utf-8
-import sys, os
-sys.path.append(os.pardir)  # 親ディレクトリのファイルをインポートするための設定
+import sys
+import os
+sys.path.append(os.path.abspath("../dataset"))  # 親ディレクトリのファイルをインポートするための設定
 import numpy as np
-from dataset.mnist import load_mnist
+from mnist import load_mnist
 from PIL import Image
 
 
@@ -21,5 +22,3 @@ img = img.reshape(28, 28)  # 形状を元の画像サイズに変形
 print(img.shape)  # (28, 28)
 
 img_show(img)
-
-print("sudo")
